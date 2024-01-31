@@ -4,16 +4,20 @@ block content
   .container
     .row.justify-content-center
       .col-md-8
-        h1.text-center.my-4 Find your train!
+        h1.text-center.my-4 Find your train
         p.text-center Select your train below to see its current schedule.
         #wrapper
           .row
             .col-md-6
-              #trainList
-                h2 Trains
-                #trains.d-flex.flex-row
+              .card
+                .card-header
+                  h2 Trains
+                .card-body
+                  #trains.d-flex.flex-row
             .col-md-6
-              #trainInfo
-                strong  <span id='trainName'></span>
-                #trainSchedule
-                  strong Select a train to view its current schedule.
+              .card
+                .card-header
+                  strong  <span id='trainName'></span>
+                .card-body
+                  #trainSchedule
+                    strong Select a train to view its current schedule.
